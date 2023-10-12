@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Todo Application</h1>
+    <div class="data-cont">
+        <form id="data" onsubmit="submitData(event)">
+            <label for="name">Task Name:</label>
+            <input type="text" name="name" id="">
+
+            <h3 for="priority">Task Priority</h3>
+            <label for="priority">High</label>
+            <input type="checkbox" name="priority" id="1">
+            <label for="priority">Low</label>
+            <input type="checkbox" name="priority" id="2">
+            <br>
+            <button id="save">Save</button>
+        </form>
+
+        <hr>
+        <hr>
+    </div>
+    <div class="want-to-delete">
+        <form id="delete" onsubmit="deletePost(event)">
+            <label for="delete">Enter the task name:</label>
+            <input type="text" name="delete" id="">
+            <button id="delete-button">Delete Post</button>
+        </form>
+       
+
+    </div>
+    <hr>
+    <hr>
+    <div class="update-post">
+        <form id="update" onsubmit="updatePost(event)">
+            <label>Enter Task you want to update:</label>
+            <input type="text" name="" id="">
+            <br>
+            <br>
+            <label for="">Enter new Value:</label>
+            <input type="text" name="" id="">
+            
+            <br>
+            <button id="update-btn">Update Task</button>
+        </form>
+    </div>
+
+    <hr>
+    <hr>
+
+    <button id="show" onclick="getTodos()">Show Todos</button>
+    <div class="active-todos">
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
